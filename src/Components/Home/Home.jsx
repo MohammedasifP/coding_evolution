@@ -2,14 +2,16 @@ import { useState } from "react"
 import { useEffect } from "react"
 import { Navbar } from "../Navbar/Navbar"
 import { Link } from "react-router-dom"
+import { useDispatch, useSelector } from "react-redux"
 
 export const Home=()=>{
-const [citydata,setCitydata]=useState([])
-    useEffect(()=>{
-        fetch("http://localhost:3000/add-city").then(Response=>Response.json()).then(data=>setCitydata(data))
-    },[])
-    
 
+    useEffect(()=>{
+        fetch("http://localhost:3000/add-city").then(Response=>Response.json()).then(data=>dispatch({type:"CITY_DATA",payload:data}))
+    },[])
+   const dispatch=useDispatch(); 
+   const cdata=useSelector(store=>store.citydata);
+     console.log(cdata)
       return(
           <div>
              <Navbar/>
@@ -26,7 +28,7 @@ const [citydata,setCitydata]=useState([])
                           </tr>
                       </thead>
                       <tbody>
-                          {citydata.map((elem)=>{
+                          {cdata.map((elem)=>{
                            return(
                             <tr>
                                  <td>{elem.id}</td>
