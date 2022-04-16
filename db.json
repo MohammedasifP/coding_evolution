@@ -1,5 +1,16 @@
 {
   "add-city": [
-
+    {
+      "country": "dghf",
+      "city": "jdhsgf",
+      "population": "4632",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "country": "dfsfafdffdhsghg",
+      "city": "sdgaf",
+      "population": "646534"
+    }
   ]
 }
