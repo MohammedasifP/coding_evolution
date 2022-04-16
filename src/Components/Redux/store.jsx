@@ -1,5 +1,6 @@
-import {Cityreducer} from './Components/Redux/City-reducer'
+import { createStore } from "redux"
+import { Cityreducer } from "./City-reducer"
 
 
-const initsatae={citydata:[]}
-export const store=(initsatae,Cityreducer)
+
+export const store=createStore(Cityreducer)

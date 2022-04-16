@@ -5,15 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import {Provider as ReduxProvider} from 'react-redux'
-
-
+import {store} from "./Components/Redux/store"
 
 ReactDOM.render(
  
      <React.StrictMode>
      
     <BrowserRouter>
-    <ReduxProvider>
+    <ReduxProvider store={store}>
     <App/>
     </ReduxProvider>
   
