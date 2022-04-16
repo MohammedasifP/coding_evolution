@@ -1,6 +1,6 @@
 
 
-export const Cityreducer=(strore,{type,payload})=>{
+export const Cityreducer=(store,{type,payload})=>{
     switch(type){
         case "CITY_DATA"{
           return {...store,citydata:payload}
