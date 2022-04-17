@@ -25,7 +25,23 @@ const cdata=useSelector(store=>store.citydata);
       })
        setData(cfdata)
    }
-   
+   const sortfun=(e)=>{
+      const operation=e.target.value;
+      let acdata=[];
+      Object.assign(acdata,cdata)
+      if(operation=="asc"){
+          
+        const sdata=acdata.sort((a,b)=>{return a.population-b.population})
+        setData(sdata)
+      }
+      else if(operation=="dec"){
+        const sdata=acdata.sort((a,b)=>{return b.population-a.population})
+        setData(sdata)
+      }
+
+    }
+     
+ 
       return(
           <div>
              
@@ -276,7 +292,14 @@ const cdata=useSelector(store=>store.citydata);
 <option value="Zimbabwe">Zimbabwe</option>
 </select>      
     </div>
-    
+    <div>
+        <p>Sort By Population</p>
+        <select onChange={sortfun}>
+             <option value=""></option>
+            <option value="asc">Ascending</option>
+            <option value="dec">descending</option>
+        </select>
+    </div>
     </div>
               <div className="tab">
                   <table border="1px">
