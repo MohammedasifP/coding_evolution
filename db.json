@@ -1,10 +1,34 @@
 {
   "add-city": [
     {
-      "id": 2,
-      "country": "dfsfafdffdhsghg",
-      "city": "sdgaf",
-      "population": "646534"
+      "country": "India",
+      "city": "bj",
+      "population": "6789",
+      "id": 4
+    },
+    {
+      "country": "India",
+      "city": "vgvhjk",
+      "population": "567890",
+      "id": 5
+    },
+    {
+      "country": "Pakistan",
+      "city": "vgvh",
+      "population": "567890",
+      "id": 6
+    },
+    {
+      "country": "Pakistan",
+      "city": "vgvh",
+      "population": "567890",
+      "id": 7
+    },
+    {
+      "country": "Pakistan",
+      "city": "vgvh",
+      "population": "567890",
+      "id": 8
     }
   ]
 }

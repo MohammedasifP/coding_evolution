@@ -1,0 +1,14 @@
+.tab{
+    margin-top: 50px;
+}
+.nav{
+    display: flex;
+}
+.country{
+    margin-top: -1px;
+    margin-left: 20px;
+    margin-bottom: -2px;
+}
+select{
+    margin-left: 13px;
+}
